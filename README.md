@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 Generative Workflows
 
-## Getting Started
+**No-Code Generative Building Workflows** - AI workflow builder for architects
 
-First, run the development server:
+> Turn text prompts into 3D building concepts with AI. No code. No complexity.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📋 Project Overview
+
+**Goal:** Visual workflow builder where architects can generate 3D buildings from text, PDFs, or images using AI.
+
+**Timeline:** 1-week MVP sprint (Feb 27 - Mar 5, 2026)
+
+**Team:** 
+- **BANE (Development Lead):** Rutik Erole
+- **Senior Dev Partner:** Chhawa 🔥 (AI)
+- **7 Specialist Agents:** Orchestrator, Opportunity, Offer, Build, Sales, Distribution, Optimization
+
+---
+
+## ✨ Features (Day 1)
+
+✅ **Visual Workflow Canvas**
+- Drag & drop node-based interface (React Flow)
+- Color-coded tile types (Input, Transform, Generate, Export)
+- Animated edges and connections
+- MiniMap navigation
+- Real-time preview
+
+✅ **Hero Workflow**
+```
+Text Prompt → AI Building Description → 3D Building → Concept Image → Export
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16 + React 19 + TypeScript
+- Tailwind CSS
+- React Flow (visual canvas)
+- Three.js (3D preview)
+- OpenAI SDK (GPT + DALL-E)
+- Zustand (state management)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Quick Start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm run dev
+# Open http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Canvas:** http://localhost:3000/canvas
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📊 Sprint Progress: Day 1/7 ✅
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [x] Visual canvas with React Flow
+- [x] Custom workflow nodes
+- [x] GitHub repo
+- [ ] OpenAI integration (next)
+
+**Goal:** 5-10 paying users by Week 1
+
+---
+
+**Built with 🔥 by Rutik Erole & Chhawa**
