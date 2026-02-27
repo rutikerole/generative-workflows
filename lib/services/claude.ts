@@ -27,7 +27,7 @@ export async function generateBuildingDescription(
 ): Promise<BuildingDescription> {
   try {
     const message = await anthropic.messages.create({
-      model: 'claude-sonnet-4-5-20250929',
+      model: 'claude-sonnet-4-20250514',
       max_tokens: 2048,
       temperature: 0.7,
       messages: [
@@ -88,8 +88,6 @@ export async function generateConceptImagePrompt(
   buildingDescription: string,
   style: string
 ): Promise<string> {
-  // For now, return an optimized prompt for Stable Diffusion
-  // We'll integrate actual image generation in next iteration
   return `Professional architectural rendering of ${buildingDescription}. 
 ${style} architecture style. 
 Exterior view, photorealistic, high quality, detailed, modern architectural photography.
@@ -100,8 +98,6 @@ Clean lines, professional lighting, contextual environment.
 export async function generatePlaceholderImage(
   buildingDescription: string
 ): Promise<string> {
-  // Return a placeholder for now
-  // We'll add Stable Diffusion API in next iteration
   const encoded = encodeURIComponent(buildingDescription.substring(0, 100));
   return `https://placehold.co/1024x1024/6366f1/white?text=${encoded}`;
 }
